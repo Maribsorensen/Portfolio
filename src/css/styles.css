@@ -1,0 +1,36 @@
+@import url(variables.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(projects.css);
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  position: relative;
+  padding-bottom: 12rem;
+}
+main {
+  max-width: 1400px;
+  margin: 1rem auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  font-family: var(--ff-headings);
+}
+p {
+  font-family: var(--ff-paragraphs);
+}
