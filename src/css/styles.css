@@ -2,6 +2,7 @@
 @import url(header.css);
 @import url(footer.css);
 @import url(projects.css);
+@import url(about.css);
 
 *,
 *:before,
@@ -30,7 +31,9 @@ h5,
 h6,
 li {
   font-family: var(--ff-headings);
+  color: var(--highlight-color);
 }
 p {
   font-family: var(--ff-paragraphs);
+  color: var(--highlight-color);
 }
