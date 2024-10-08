@@ -1,0 +1,31 @@
+.project-grids {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.project-img-container,
+.project-img {
+  width: 100%;
+}
+.project-h2 {
+  text-align: center;
+}
+.project-info-container {
+  border: 0.15rem solid var(--highlight-color);
+  padding: 1rem;
+  position: relative;
+  .project-links {
+    position: absolute;
+    bottom: 1rem;
+  }
+  a {
+    text-decoration: none;
+    color: var(--highlight-color);
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
