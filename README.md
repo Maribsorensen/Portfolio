@@ -8,7 +8,7 @@ This is the start of my portfolio
 
 Currently working on this portfolio. As of now it is live and submitted for a school project, but I will be working on this continuesly throughout my coding journey.
 
-I want the my portfolio to:
+I want my portfolio to:
 
 - Showcase projects I am proud of
 - Be a way to find information about me and how to reach me
