@@ -21,7 +21,7 @@ I want my portfolio to:
 
 ## Getting Started
 
-The website is hosted live on Github Pages [here](https://maribsorensen.github.io/Portfolio/). Instructions bellow for installing and running.
+The website is hosted live on Github Pages [here](https://maribsorensen.github.io/Portfolio/).
 
 ## Contact
 
