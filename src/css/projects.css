@@ -55,3 +55,14 @@
 .project-info-container:hover {
   transform: scale(1.05);
 }
+@media (max-width: 900px) {
+  .project-grids {
+    display: block;
+  }
+  .project-info-container {
+    padding-bottom: 5rem;
+  }
+  .project-links {
+    display: flex;
+  }
+}

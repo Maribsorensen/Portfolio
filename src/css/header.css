@@ -13,6 +13,7 @@ nav {
   align-items: center;
   ul {
     list-style-type: none;
+    padding: 0;
   }
   li {
     display: inline-block;
@@ -26,5 +27,12 @@ nav {
   }
   a:hover {
     color: var(--cta-color);
+  }
+}
+@media (max-width: 530px) {
+  nav {
+    li {
+      margin: 0 0.5rem;
+    }
   }
 }
