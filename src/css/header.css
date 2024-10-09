@@ -19,9 +19,12 @@ nav {
     margin: 0 2rem;
     font-size: 1.2rem;
     text-transform: uppercase;
+  }
+  a {
+    text-decoration: none;
     transition: color 0.3s ease;
   }
-  li:hover {
+  a:hover {
     color: var(--cta-color);
   }
 }
