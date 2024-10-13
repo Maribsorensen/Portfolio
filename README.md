@@ -12,7 +12,7 @@ I want my portfolio to:
 
 - Showcase projects I am proud of
 - Be a way to find information about me and how to reach me
-- Be a place for me to experiment with and work on my coding skills
+- Be a place for me to experiment with new techniques and work on my coding skills
 
 ## Built With
 
