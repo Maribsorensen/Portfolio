@@ -1,7 +1,7 @@
 .project-grids {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  align-items: center;
+  align-items: stretch;
   gap: 2rem;
   margin-top: 3rem;
 }
@@ -11,12 +11,8 @@
 }
 .project-img-container img {
   border-radius: 0.5rem;
-  transition: transform 0.3s ease-in-out;
 }
 
-.project-img-container img:hover {
-  transform: scale(1.1);
-}
 .project-h2 {
   text-align: center;
   font-size: 2.5rem;
@@ -28,7 +24,6 @@
   padding: 1rem;
   border-radius: 0.5rem;
   position: relative;
-  transition: transform 0.3s ease;
   padding-bottom: 3rem;
   h3,
   h4 {
@@ -52,9 +47,7 @@
     color: var(--bg-color);
   }
 }
-.project-info-container:hover {
-  transform: scale(1.05);
-}
+
 @media (max-width: 900px) {
   .project-grids {
     display: block;

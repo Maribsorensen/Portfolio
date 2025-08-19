@@ -2,6 +2,7 @@
   display: flex;
   gap: 2rem;
   margin: 4rem auto;
+  align-items: stretch;
 }
 
 .about-container {
@@ -39,10 +40,15 @@
   margin-bottom: 1.5rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1400px) {
   .about-section {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+}
+.about-container,
+.about-img {
+  height: 100%;
+  flex: 1;
 }
