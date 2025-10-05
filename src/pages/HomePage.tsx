@@ -2,30 +2,52 @@ import { Link } from 'react-router-dom';
 import { projects } from '../data/projects';
 
 export function HomePage() {
+  const featuredProjects = [
+    projects.find((p) => p.id === 'Javascript Frameworks'),
+    projects.find((p) => p.id === 'Semester Project 2'),
+    projects.find((p) => p.id === 'CSS Frameworks'),
+  ].filter(Boolean);
+
   return (
-    <div>
+    <div className="px-6 py-12">
+      {/* Hero Section */}
       <section className="text-center mb-16">
-        <h1 className="text-3xl md:text-5xl font-heading mb-4">
+        <h1 className="text-3xl md:text-5xl font-heading mb-4 text-cta">
           Welcome to My Portfolio🌿
         </h1>
-        <p className="max-w-2xl mx-auto text-lg font-paragraph">
+        <p className="max-w-2xl mx-auto text-lg font-paragraph text-cta">
           Explore my projects, learn about me, and enjoy the peaceful vibes.
         </p>
       </section>
+
+      {/* Featured Projects */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {projects.map((project) => (
+        {featuredProjects.map((project) => (
           <div
             key={project.id}
             className="bg-bg border border-highlight/20 rounded-2xl shadow-md overflow-hidden flex flex-col hover:shadow-lg transition-shadow duration-300"
           >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="h-48 w-full object-cover"
-            />
+            {project.image && (
+              <img
+                src={project.image}
+                alt={project.title}
+                className="h-48 w-full object-cover"
+              />
+            )}
             <div className="p-4 flex flex-col flex-grow">
-              <h2 className="font-heading text-2xl mb-2">{project.title}</h2>
-              <p className="font-paragraph flex-grow">{project.teaser}</p>
+              {project.id && (
+                <span className="bg-highlight text-cta text-xs px-2 py-1 rounded-full mb-2">
+                  {project.id}
+                </span>
+              )}
+              <h2 className="font-heading text-2xl mb-2 text-cta">
+                {project.title}
+              </h2>
+              {project.teaser && (
+                <p className="font-paragraph flex-grow text-cta">
+                  {project.teaser}
+                </p>
+              )}
               <Link
                 to={`/projects/${project.id}`}
                 className="mt-4 inline-block text-cta hover:underline font-heading uppercase tracking-wider text-sm"
