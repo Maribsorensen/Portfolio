@@ -30,7 +30,7 @@ export const projects = [
       icons: 'react icons',
       notifications: 'react hot toast',
     },
-    image: '',
+    image: '../src/assets/loopcart.png',
     links: {
       github: 'https://github.com/Maribsorensen/javascript-frameworks-ca',
       live: 'https://loopcart-ca.netlify.app/',
@@ -49,7 +49,7 @@ export const projects = [
       routing: 'custom client-side router',
       notifications: 'tailwindflex prebuilt toaster',
     },
-    image: 'assets',
+    image: '../src/assets/Bidly skjermbilde.png',
     links: {
       github: 'https://github.com/Maribsorensen/SP2-Bidly',
       live: 'https://sp2-bidly.netlify.app/',
