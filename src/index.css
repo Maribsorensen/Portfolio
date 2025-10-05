@@ -3,5 +3,9 @@
 
 @theme {
   --font-heading: 'Playfair Display', sans-serif;
-  --ff-paragraph: 'Lora', sans-serif;
+  --font-paragraph: 'Lora', sans-serif;
+
+  --color-background: #363c29;
+  --color-cta: #f9ebc7;
+  --color-highlight: #5f6346;
 }
