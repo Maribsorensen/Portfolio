@@ -1,13 +1,22 @@
 export const projects = [
   {
     id: 'CSS Frameworks',
-    title: '',
-    teaser: '',
-    description: '',
-    image: '',
+    title: 'Blikk',
+    teaser:
+      'CSS Frameworks assignment. A online social platform where users can manage their profile and posts, comment and view other users posts.',
+    description:
+      'This project was created for two different assignments for Noroff front end development year 2. This was first a javascropt level 2 assignment where I had to build on already mostly finished code, as well as setup tests with vitest. Later in the CSS Frameworks course we had to add on tailwind styling to that project.',
+    techstack: {
+      frontend: 'vite, html, javascript',
+      styling: 'tailwind CSS',
+      routing: 'custom client-side router',
+      notifications: 'tailwindflex prebuilt toaster',
+      testing: 'vitest',
+    },
+    image: '../src/assets/blikk.png',
     links: {
-      github: '',
-      live: '',
+      github: 'https://github.com/Maribsorensen/CSS-Frameworks-Public',
+      live: 'https://css-frameworks-blikk.netlify.app/',
     },
   },
   {
