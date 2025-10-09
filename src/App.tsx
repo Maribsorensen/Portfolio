@@ -13,6 +13,7 @@ function App() {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/:projectId" element={<ProjectArticle />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="*" element={<h1>404 Not Found</h1>} />
       </Route>
     </Routes>
   );
