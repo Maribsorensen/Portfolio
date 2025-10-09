@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+import { usePageMeta } from '../hooks/usePageMeta';
 
 export function AboutPage() {
+  usePageMeta();
   return (
     <div className="max-w-4xl mx-auto px-6 py-12">
       {/* Intro */}
@@ -9,9 +11,9 @@ export function AboutPage() {
           About Me
         </h1>
         <p className="text-lg md:text-xl font-paragraph text-cta">
-          Hi! I’m 29, finishing my 2-year frontend education in October 2025,
-          and I love building interactive web experiences with React and modern
-          frontend technologies.
+          Hi! I’m Mari, 29, finishing my 2-year frontend education in October
+          2025. I’m so excited to continue learning about frontend after my
+          course is finished and explore new opurtunities in my future work.
         </p>
       </section>
 
