@@ -1,6 +1,6 @@
 # 💫 Mari Berg Sørensen — Portfolio
 
-![image](assets/readmeportfolio.png)
+![image](src/assets/readmeportfolio.png)
 
 A modern developer portfolio built with **React**, **Vite**, and **Tailwind CSS**.  
 Showcasing my front-end development skills, selected projects, and ways to get in touch.
