@@ -7,12 +7,11 @@ export function HomePage() {
     projects.find((p) => p.id === 'Javascript Frameworks'),
     projects.find((p) => p.id === 'Semester Project 2'),
     projects.find((p) => p.id === 'CSS Frameworks'),
-  ].filter(Boolean);
+  ].filter((p): p is (typeof projects)[number] => Boolean(p));
   usePageMeta();
 
   return (
     <div className="px-6 py-12">
-      {/* Hero Section */}
       <section className="text-center mb-16">
         <h1 className="text-3xl md:text-5xl font-heading mb-4 text-cta">
           Welcome to My Portfolio🌿
@@ -22,8 +21,6 @@ export function HomePage() {
           get the information you need about me.
         </p>
       </section>
-
-      {/* Featured Projects */}
       <section>
         <h2 className="text-xl font-heading text-cta mb-4 underline">
           Recent highlighted projects
@@ -37,7 +34,7 @@ export function HomePage() {
               {project.image && (
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={project.alt}
                   className="h-48 w-full object-cover"
                 />
               )}

@@ -15,7 +15,6 @@ export function ProjectArticle() {
 
   return (
     <div className="max-w-5xl mx-auto p-6 lg:flex lg:gap-10">
-      {/* Project Image */}
       {project.image && (
         <img
           src={project.image}
@@ -23,18 +22,13 @@ export function ProjectArticle() {
           className="rounded-2xl mb-6 lg:mb-0 lg:w-1/2 object-cover shadow-lg"
         />
       )}
-
-      {/* Project Content */}
       <div className="lg:w-1/2 flex flex-col">
-        {/* Back Link */}
         <Link
           to="/projects"
           className="text-cta hover:underline mb-4 font-paragraph"
         >
           ← Back to Projects
         </Link>
-
-        {/* Project ID / Category Badge */}
         {project.id && (
           <div className="flex gap-2 mb-4">
             <span className="bg-highlight text-cta text-xs px-2 py-1 rounded-full">
@@ -42,16 +36,10 @@ export function ProjectArticle() {
             </span>
           </div>
         )}
-
-        {/* Project Title */}
         <h1 className="text-4xl mb-4 font-heading text-cta">{project.title}</h1>
-
-        {/* Project Description */}
         <p className="text-lg mb-6 whitespace-pre-line font-paragraph text-cta">
           {project.description}
         </p>
-
-        {/* Features */}
         {project.features && (
           <div className="mb-6">
             <h2 className="font-heading text-xl mb-2 text-cta">Features</h2>
@@ -62,8 +50,6 @@ export function ProjectArticle() {
             </ul>
           </div>
         )}
-
-        {/* Tech Stack */}
         {project.techstack && (
           <div className="mb-6">
             <h2 className="font-heading text-xl mb-2 text-cta">Tech Stack</h2>
@@ -79,8 +65,6 @@ export function ProjectArticle() {
             </div>
           </div>
         )}
-
-        {/* Links */}
         <div className="flex gap-4 mt-4">
           {project.links.github && (
             <a

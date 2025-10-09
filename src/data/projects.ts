@@ -14,6 +14,7 @@ export const projects = [
       testing: 'vitest',
     },
     image: '../src/assets/blikk.png',
+    alt: 'Screenshot of the Blikk project website',
     links: {
       github: 'https://github.com/Maribsorensen/CSS-Frameworks-Public',
       live: 'https://css-frameworks-blikk.netlify.app/',
@@ -40,6 +41,7 @@ export const projects = [
       notifications: 'react hot toast',
     },
     image: '../src/assets/loopcart.png',
+    alt: 'Screenshot of the Loopcart project website',
     links: {
       github: 'https://github.com/Maribsorensen/javascript-frameworks-ca',
       live: 'https://loopcart-ca.netlify.app/',
@@ -59,6 +61,7 @@ export const projects = [
       notifications: 'tailwindflex prebuilt toaster',
     },
     image: '../src/assets/Bidly skjermbilde.png',
+    alt: 'Screenshot of the Bidly project website',
     links: {
       github: 'https://github.com/Maribsorensen/SP2-Bidly',
       live: 'https://sp2-bidly.netlify.app/',
