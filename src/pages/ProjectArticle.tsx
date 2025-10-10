@@ -36,7 +36,26 @@ export function ProjectArticle() {
             </span>
           </div>
         )}
-        <h1 className="text-4xl mb-4 font-heading text-cta">{project.title}</h1>
+        <div className="flex items-center justify-between mb-4 flex-col gap-2 md:flex-row">
+          <h1 className="text-4xl font-heading text-cta">{project.title}</h1>
+
+          <button
+            onClick={() => {
+              if (navigator.share) {
+                navigator.share({
+                  title: project.title,
+                  url: window.location.href,
+                });
+              } else {
+                navigator.clipboard.writeText(window.location.href);
+                alert('Link copied to clipboard!');
+              }
+            }}
+            className="text-sm bg-highlight text-cta px-3 py-1 rounded-lg hover:bg-cta hover:text-background transition font-paragraph"
+          >
+            Share / Copy Link
+          </button>
+        </div>
         <p className="text-lg mb-6 whitespace-pre-line font-paragraph text-cta">
           {project.description}
         </p>
