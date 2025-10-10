@@ -13,7 +13,7 @@ export const projects = [
       notifications: 'tailwindflex prebuilt toaster',
       testing: 'vitest',
     },
-    image: '../src/assets/blikk.png',
+    image: '/blikk.png',
     alt: 'Screenshot of the Blikk project website',
     links: {
       github: 'https://github.com/Maribsorensen/CSS-Frameworks-Public',
@@ -40,7 +40,7 @@ export const projects = [
       icons: 'react icons',
       notifications: 'react hot toast',
     },
-    image: '../src/assets/loopcart.png',
+    image: '/loopcart.png',
     alt: 'Screenshot of the Loopcart project website',
     links: {
       github: 'https://github.com/Maribsorensen/javascript-frameworks-ca',
@@ -60,7 +60,7 @@ export const projects = [
       routing: 'custom client-side router',
       notifications: 'tailwindflex prebuilt toaster',
     },
-    image: '../src/assets/Bidly skjermbilde.png',
+    image: '/Bidly skjermbilde.png',
     alt: 'Screenshot of the Bidly project website',
     links: {
       github: 'https://github.com/Maribsorensen/SP2-Bidly',
