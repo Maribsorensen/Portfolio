@@ -46,3 +46,5 @@ npm run dev
 ```
 
 ## Live Demo
+
+[Portfolio](https://portofolio-mari.netlify.app/)
